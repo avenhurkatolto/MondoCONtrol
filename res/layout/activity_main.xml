@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+	
+<LinearLayout 
+    android:id="@+id/Fejlec"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" android:textColor="#8B181B" >
+    
+   <ImageButton 
+            android:id="@+id/ExpColl1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collapse"
+            android:background="#791417"
+            android:clickable="true" 
+            android:contentDescription="collapse1"
+            android:tag="1"
+            android:onClick="CollExp"
+            />
+    
+   <ImageButton 
+            android:id="@+id/ExpColl2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collapse"
+            android:background="#791417"
+            android:clickable="true" 
+            android:contentDescription="collapse2"
+            android:tag="2"
+            android:onClick="CollExp"
+            
+            />
+   <ImageButton 
+            android:id="@+id/ExpColl3"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collapse"
+            android:background="#791417"
+            android:clickable="true"
+             android:contentDescription="collapse3"
+             android:tag="3"
+            android:onClick="CollExp"
+             />
+   <ImageButton 
+            android:id="@+id/ExpColl4"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/collapse"
+            android:background="#791417"
+            android:clickable="true" 
+            android:contentDescription="collapse1"
+             android:tag="4"
+            android:onClick="CollExp"
+            />
+    
+   <ImageButton 
+            android:id="@+id/Alarm"
+           android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:src="@drawable/alarm"
+            android:background="#791417"
+            android:clickable="true" 
+            android:contentDescription="alarms"
+            android:onClick="alarms"/>
+    
+    
+    
+</LinearLayout>
+
+
+
+
+
+
+
+<ScrollView 
+    android:id="@+id/ScrollView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center" android:textColor="#FFFFFF" 
+    android:layout_below="@id/Fejlec">
+	
+    
+    
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#791417">
+	    
+	    
+	       <RelativeLayout 
+	    android:id="@+id/RelativeIdoBal"
+	    android:layout_width="40dp"
+	    android:layout_height="wrap_content"
+	    >
+	    <TextView 
+	        android:id="@+id/BalIdoFejlec"
+	        android:layout_width="40dp"
+	        android:layout_height="38dp"
+			    
+	     />
+	    <TextView 
+	        android:textSize="17sp"
+	        android:id="@+id/BalIdo"
+	        android:layout_width="40dp"
+	        android:layout_height="wrap_content"
+	     	android:layout_below="@id/BalIdoFejlec"
+	     	android:layout_alignParentLeft="true"
+	       android:background="#791417" 
+	        android:textColor="#FFFFFF"
+	     />
+	    
+	</RelativeLayout>
+	    
+	    <RelativeLayout
+        android:id="@+id/Col1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" >
+	<TextView
+	    android:id="@+id/Cim1"
+	    android:text="Szabadtér"
+	    android:gravity="center" 
+	    android:textColor="#000000"
+	    android:background="#791417"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    
+	    />
+    <TextView
+	    android:id="@+id/Program01"
+	    
+	    android:gravity="center" 
+	    android:background="@layout/bg_programs"
+	    android:layout_below="@id/Cim1"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    
+	    />
+	
+    <TextView
+	    android:id="@+id/Program1"
+	    android:text="Megnyitó"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program01"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="1"
+	    />
+	<TextView
+	    android:id="@+id/Program02"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program1"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    
+	    />
+    <TextView
+	    android:id="@+id/Program2"
+	    android:textSize="10dp"
+	    android:text="Viking-kori előadás"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program02"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="2"
+	    />
+	
+    <TextView
+	    android:id="@+id/Program3"
+	    android:text="Geeks kerekasztal"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program2"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="3"
+	    android:textSize="11sp"
+	    />
+	
+    <TextView
+	    android:id="@+id/Program4"
+	    android:text="Cosplay Craftmanship"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program3"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="4"
+	    android:textSize="11sp"
+	    />
+	
+    <TextView
+	    android:id="@+id/Program5"
+	    android:text="Cosplay Performance"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program4"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:textSize="11dp"
+	    android:onClick="clickedProgram"
+	    android:tag="5"
+	    />
+	<TextView
+	    android:id="@+id/Program03"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program5"
+	    android:layout_width="match_parent"
+	    android:layout_height="160dp"
+	    
+	    />
+    <TextView
+	    android:id="@+id/Program6"
+	    android:text="Alkimista Labor"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program03"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="6"
+	    />
+	
+    <TextView
+	    android:id="@+id/Program7"
+	    android:text="Táncos AMV-k"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program6"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="7"
+	    />
+	 
+	 <TextView
+	    android:id="@+id/Program8"
+	    android:text="ParaPara Fake Starz"
+	     android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program7"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="8"
+	    />
+    
+    <TextView
+	    android:id="@+id/Program9"
+	    android:text="Home Made Asia koncert"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program8"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="9"
+	    />
+	<TextView
+	    android:id="@+id/Program04"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program9"
+	    android:layout_width="match_parent"
+	    android:layout_height="20dp"
+	    
+	    />
+    <TextView
+	    android:id="@+id/Program10"
+	    android:textSize="14dp"
+	    android:text="Eredményhirdetés"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program04"
+	    android:layout_width="match_parent"
+	    android:layout_height="60dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="10"
+	    />
+	
+	 </RelativeLayout>
+        
+    
+    <RelativeLayout
+        android:id="@+id/Col2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+	    android:id="@+id/Cim2"
+	    android:text="Fogadó"
+	    android:gravity="center" android:textColor="#000000"
+	   
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    
+	    />
+	
+    <TextView
+        android:id="@+id/Program11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/Cim2"
+        android:background="@layout/bg_programs"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickedProgram"
+        android:tag="13"
+        android:text="WoW RoF"
+        android:textColor="#791417" />
+    
+  
+    <TextView
+        android:id="@+id/Program12"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_below="@id/Program11"
+        android:background="@layout/bg_programs"
+        android:clickable="true"
+        android:gravity="center"
+        android:onClick="clickedProgram"
+        android:textSize="11sp"
+        android:tag="12"
+        android:text="Just Dance 4 szintfelmérő"
+        android:textColor="#791417" />
+	
+    <TextView
+	    android:id="@+id/Program13"
+	    android:text="Just Dance 4 verseny"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program12"
+	    android:layout_width="match_parent"
+	    android:layout_height="160dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="13"
+	    />
+
+    <TextView
+	    android:id="@+id/Program14"
+	    android:text="Naruto Storm 3/Injustice"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program13"
+	    android:layout_width="match_parent"
+	    android:layout_height="320dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="14"
+	    />
+	
+          <TextView
+	    android:id="@+id/Program05"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program14"
+	    android:layout_width="match_parent"
+	    android:layout_height="240dp"
+	    />
+    </RelativeLayout>
+     
+        <RelativeLayout
+        android:id="@+id/Col3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+
+        <TextView
+	    android:id="@+id/Cim3"
+	    android:text="25-ös csarnok"
+	    android:gravity="center" android:textColor="#000000"
+	    
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    
+	    />
+        
+        
+          <TextView
+	    android:id="@+id/Program05"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Cim3"
+	    android:layout_width="match_parent"
+	    android:layout_height="120dp"
+	    />
+	
+          <TextView
+	    android:id="@+id/Program15"
+	    android:text="Gettó cosplay"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program05"
+	    android:layout_width="match_parent"
+	    android:layout_height="160dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="15"
+	    />
+		
+         <TextView
+	    android:id="@+id/Program16"
+	    android:textSize="12dp"
+	    android:text="Star Trek előadás"
+	   android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program15"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="16"
+	    />
+          
+           <TextView
+	    android:id="@+id/Program17"
+	    android:text="Korcok Péter: A faun nyomában"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program16"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="17"
+	    />
+          
+          
+           <TextView
+	    android:id="@+id/Program18"
+	    android:text="Geek kerek- asztal"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program17"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="18"
+	    />  
+           <TextView
+	    android:id="@+id/Program19"
+	    android:text="Neil Gaiman"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program18"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="19"
+	    />  
+           <TextView
+	    android:id="@+id/Program20"
+	    android:text="Novella író beszélgetés"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program19"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:textSize="11sp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="20"
+	    />  
+          
+           
+         
+           <TextView
+	    android:id="@+id/Program06"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program20"
+	    android:layout_width="match_parent"
+	    android:layout_height="280dp"
+	   />
+          
+          
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/Col4"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+	
+	
+	
+	<TextView
+	    android:id="@+id/Cim4"
+	    android:text="Kerámia terem"
+	    android:gravity="center" android:textColor="#000000"
+	  
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    />  
+	<TextView
+	    android:id="@+id/Program15"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Cim4"
+	    android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    />
+	<TextView
+	    android:id="@+id/Program21"
+	    android:layout_width="match_parent"
+	    android:layout_height="160dp"
+	    android:layout_below="@id/Program15"
+	    android:background="@layout/bg_programs"
+	    android:clickable="true"
+	    android:gravity="center"
+	    android:onClick="clickedProgram"
+	    android:tag="21"
+	    android:text="Karaoke (egész nap)"
+	    android:textColor="#791417"
+	    android:textSize="15dp" />
+	
+	<TextView
+	    android:id="@+id/Program22"
+	    android:textSize="15dp"
+	    android:text="AMV-verseny"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program21"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="22"
+	    />
+	<TextView
+	    android:id="@+id/Program07"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program22"
+	    android:layout_width="match_parent"
+	    android:layout_height="240dp"
+	    />
+	<TextView
+	    android:id="@+id/Program23"
+	    android:textSize="15dp"
+	    android:text="J-pop/ J-Rock vetítés"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program07"
+	    android:layout_width="match_parent"
+	    android:layout_height="80dp"
+	    android:clickable="true"
+	    android:onClick="clickedProgram"
+	    android:tag="23"
+	    />
+	<TextView
+	    android:id="@+id/Program012"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program23"
+	    android:layout_width="match_parent"
+	    android:layout_height="120dp"
+	    />
+	<TextView
+	    android:id="@+id/Program24"
+	    android:textSize="14dp"
+	    android:text="Filmvetítés"
+	    android:background="@layout/bg_programs"
+	    android:gravity="center" android:textColor="#791417"
+	    android:layout_below="@id/Program012"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:clickable="true"
+	    
+	    android:onClick="clickedProgram"
+	    android:tag="24"
+	    />
+	
+	
+	
+	
+	
+	
+	</RelativeLayout>
+</LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
